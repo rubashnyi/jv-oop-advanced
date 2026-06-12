@@ -7,7 +7,7 @@ public class MainApp {
 
         FigureSupplier figureSupplier = new FigureSupplier();
 
-        Figure[] figuresArray = new Figure[6];
+        Drawable[] figuresArray = new Drawable[6];
 
         for (int i = 0; i < figuresArray.length / 2; i++) {
             figuresArray[i] = figureSupplier.getRandomFigure();
@@ -18,8 +18,8 @@ public class MainApp {
 
         }
 
-        for (Figure baseFigure : figuresArray) {
-            baseFigure.draw();
+        for (Drawable figure : figuresArray) {
+            figure.draw();
 
         }
     }
